@@ -1,0 +1,486 @@
+@import "_fonts.sass"
+$color-item:      				#D22237
+$color-white:     				#ffffff
+$color-black:							#262626
+$color-background: 				#CF3B47
+=MontM()
+	font-family: "Montserrat Medium" 
+=MontB()
+	font-family: "Montserrat Bold"
+
+*
+	+MontM()
+	font-size: 10px
+	outline: none
+h2 
+	+MontB 
+	font-size: 2.3rem
+h3 
+	+MontB
+	font-size: 2.1rem
+h4 
+	+MontB
+	font-size: 1.6rem
+	margin-bottom: 12px
+a 
+	text-decoration: underline
+	transition-duration: 0.2s
+	&:hover
+		color: $color-item
+		transition-duration: 0.2s
+.closeup
+	display: none
+.link-shop 
+	display: inline-block
+.prev, .next 
+	position: absolute
+	top: 45%
+	height: 30px
+	width: 30px
+	z-index: 10
+.prev 
+	left: -10%
+.next
+	right: -10%
+.wave 
+	width: 100%
+	height: 100%
+	margin-top: 50px
+	margin-bottom: -5px
+	fill: #262626
+.wave-header
+	margin-top: -40px
+
+// section 
+// 	padding-top: 70px
+p 
+	+MontM
+	font-size: 1.6rem
+	letter-spacing: 1px
+.headers
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 50
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $color-black
+		box-shadow: 0px 1px 15px $color-black
+		z-index: 3
+.header
+	height: 700px
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta8.jpg), #0e0e0e 50% 15%
+	background-repeat: no-repeat
+	background-size: cover
+	&-title
+		color: $color-white
+		+MontB
+		text-align: left
+		h1 
+			padding-top: 180px
+			font-size: 12rem
+			+MontB
+		span 
+			margin-top: 20px
+			font-size: 3.8rem
+			+MontB
+	&-body
+		position: relative
+		display: flex
+		justify-content: space-between
+		height: 80px
+		align-items: center
+		&__logo, &__phone
+			position: relative
+			z-index: 4
+			a
+				+MontB
+				text-decoration: none
+				font-size: 2.2rem
+				display: block
+				min-width: 100%
+				color: $color-white
+		&__phone
+			margin-right: 120px
+			a, span
+				font-size: 1.6rem
+				color: $color-white
+	&-burger 
+		display: none
+	&-list 
+		display: flex
+		position: relative
+		list-style: none
+		z-index: 4
+		li 
+			padding: 5px 0px 0px 35px
+		a
+			+MontB
+			text-decoration: none
+			color: $color-white
+			font-size: 1.3rem
+.briefly 
+	background-color: $color-background
+	color: $color-white
+	margin-bottom: -2px
+	h2 
+		margin: 50px 0 30px 0
+.shop 
+	position: relative
+	background-color: $color-background
+	padding-bottom: 30px
+	h2 
+		margin: 50px 0 30px 0
+		color: $color-white
+	&-item 
+		width: 100%
+		height: 170px
+		margin: 20px 0px
+		border-radius: 10px
+		background-color: $color-white
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+		z-index: 2
+		&__img 
+			display: flex 
+			justify-content: center
+			margin: 50px 0px 
+			img 
+				padding-left: 5px
+				width: 100%
+				height: 100%
+				max-width: 80px
+				max-height: 80px
+		&__text 
+			display: flex
+			justify-content: space-between
+			h3 
+				display: inline
+				margin-top: 7rem
+				text-align: left
+			a 
+				display: inline
+				font-size: 1.8rem
+				text-align: right
+				color: $color-black
+			h4 
+				text-align: right
+		&__link 
+			display: flex 
+			flex-direction: column
+			justify-content: center
+			padding: 20px 0px
+			h3 
+				display: none
+		&__visible 
+			text-align: center 
+			font-size: 1.8rem
+			+MontM
+			color: $color-white
+.slider
+	background-color: $color-black
+	max-height: 800px
+	padding: 60px 0px 80px 0px
+	h2 
+		color: $color-white
+		margin-bottom: 40px
+	.slick-center
+		opacity: 1
+		transition-duration: 0.7s
+	.slick-cloned 
+		transition-duration: 0.7s
+	.slick-list 
+		padding: 0 90px
+	&-block
+		position: relative
+		padding: 20px
+		margin: 20px 0 
+		background-color: $color-white
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+		border-radius: 10px
+	&-item 
+		opacity: 0.5
+		margin: 0 auto
+		text-align: center
+		transition-duration: 0.7s
+		img 
+			max-width: 700px
+			height: auto
+			border-radius: 10px
+.rent 
+	background-color: $color-background
+	color: $color-white
+	margin-bottom: -2px
+	h2 
+		margin: 70px 0 40px 0
+		color: $color-white
+.feedback
+	background-color: $color-background
+	padding-top: 50px
+	a 
+		text-decoration: none
+	&-form 
+		width: 100%
+		max-width: 500px
+		margin: 20px auto 0px auto
+		padding: 40px 50px 
+		background-color: $color-white
+		border-radius: 10px
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+		h2 
+			margin-bottom: 20px
+			text-align: center
+		form
+			display: flex
+			justify-content: space-around
+			flex-direction: column
+		input, button
+			width: 100%
+			margin: 5px auto
+			font-size: 1.6rem
+			border-radius: 5px
+		input 
+			display: inline-block !important
+			max-width: 500px
+			padding: 10px
+			font-size: 1.6rem
+			border: 2px solid $color-black
+		button
+			width: 100%
+			max-width: 220px
+			height: 40px
+			margin-top: 15px	
+			background-color: $color-item
+			border: none
+			-webkit-transition: 0.5s
+			transition: 0.5s
+			&:hover 
+				color: $color-white
+				background-color: $color-item
+				-webkit-transition: 0.5s
+				transition: 0.5s
+		&__whatsapp:hover
+			color: $color-black
+		&__whatsapp, &__call
+			display: block
+			width: 100%
+			max-width: 220px
+			height: 40px
+			text-align: center
+			margin: 10px auto 0px auto
+			padding: 8px
+			color: $color-white
+			font-size: 16px
+			border-radius: 5px
+			background-color: #25d366
+		&__call
+			background-color: $color-black
+	&-or 	
+		text-align: center
+		width: 80%
+		margin: 10px auto
+		overflow: hidden
+		span 
+			position: relative
+			font-size: 1.6rem
+			&::before, &::after
+				display: block
+				width: 1000px
+				content: ''
+				position: absolute
+				border-bottom: 1px solid #000
+				top: 50%
+			&::before
+				right: 50px
+			&::after 
+				left: 50px
+.about
+	background: $color-black
+	padding-bottom: 40px
+	h2 
+		margin-top: 50px
+		color: $color-white
+	iframe 
+		width: 100%
+		border: none
+		border-radius: 10px
+	&-information 
+		height: 350px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		margin-top: 40px
+		color: $color-white
+	&-text
+		color: $color-white 
+		a 
+			color: $color-white
+			font-size: 1.6rem
+	&-link
+		&__png
+			margin-bottom: 15px
+			img 
+				margin: 0 3px
+				max-width: 30px
+	.copyright 
+		margin-top: 30px
+		a, span
+			color: $color-white
+			font-size: 1.2rem
+
+@media only screen and (max-width: 1200px)
+	.slider-item
+		img 
+			max-width: 550px
+			width: auto
+@media only screen and (max-width: 1023px)
+	.header-body__phone
+		display: none
+	.slick-center 
+		padding: 0 20px
+	.wave-header
+		margin-top: -10px
+@media only screen and (max-width: 992px)
+	.header-title 
+		margin-top: 0
+		h1
+			font-size: 9rem
+	h2 
+		font-size: 1.9rem
+	.header 
+		height: 700px
+		&-nav
+			&__item		
+	.slider-item 
+		img 
+			max-width: 400px
+@media only screen and (max-width: 767px)
+	.lock
+		overflow: hidden
+	.wave-header
+		margin-top: -10px
+	p
+		font-size: 1.5rem
+	.header
+		&-body
+			height: 50px
+		&-burger 
+			display: block
+			position: relative
+			margin-top: 28px
+			width: 30px
+			height: 30px
+			z-index: 4
+			margin-right: 10px
+			span 
+				position: absolute
+				left: 0
+				width: 100%
+				height: 2px
+				top: 0px
+				background-color: $color-white
+				transition: all 0.3s ease-out 0.1s
+			&:before, &:after 
+				content: ''
+				background-color: $color-white
+				position: absolute
+				width: 100%
+				height: 2px
+				left: 0
+				transition: all 0.3s ease-out 0.1s
+			&:before
+				top: 9px
+			&:after
+				top: -9px
+		&-menu 
+			position: fixed
+			top: -100vh
+			left: 0
+			width: 100%
+			height: 100%
+			overflow: auto
+			background-color: $color-black
+			padding: 80px 0 0 0
+			transition: all 0.3s ease-in-out 0.1s
+		&-list 
+			display: block
+			text-align: center
+			padding: 0
+			li 
+				padding: 0
+				margin-top: 30px
+			a 
+				margin-top: 20px
+				font-size: 2.2rem
+	.header-menu.active 
+		top: 0vh
+		transition: all 0.2s ease-in-out 0.1s
+	.header-burger.active:before 
+		transform: rotate(45deg)
+		top: 0px
+	.header-burger.active:after 
+		transform: rotate(-45deg)
+		top: 0px
+	.header-burger.active span
+		display: none
+	.shop 
+		&-item 
+			h3 
+				display: none
+			&__img 
+				img 
+					margin-top: 20px
+					width: 55px
+					height: 60px
+			&__link
+				max-height: 100px
+				margin: 0px auto 0 auto
+				h3
+					text-align: right
+					font-size: 1.6rem
+					display: inline-block
+				a 
+					font-size: 1.6rem
+		.slider-item 
+			max-height: 100px
+			img 
+				width: 100%
+	.rent 
+		margin-top: 0	
+	
+@media only screen and (max-width: 580px)
+	.wave-header
+		margin-top: -50px
+	.header
+		max-height: 550px
+	.header-title h1 
+		padding-top: 150px
+	.slider-item
+		img 
+			max-height: 185px
+	.feedback-form
+		a
+			font-size: 1.4rem
+@media only screen and (max-width: 425px)
+	.wave-header
+		margin-top: -10px
+	.header
+		height: 500px
+	.header-title
+		h1
+			font-size: 6rem
+		span 
+			font-size: 2.2rem
+	.shop 
+		&-item 
+			&__img 
+				img 
+					width: 50px
+					height: 50px
+					margin-left: 20px
+			
