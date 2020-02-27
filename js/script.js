@@ -4,8 +4,6 @@ $('.slider-block').slick({
   arrows: true,
   slidesToShow: 1,
   infinity: true,
-  prevArrow: "<img src='../img/back.png' class='prev' alt='1'>",
-  nextArrow: "<img src='../img/next.png' class='next' alt='2'>",
   waitForAnimate: false,
   centerMode: true,
   adaptiveHeight: true,
@@ -24,9 +22,9 @@ $('.slider-block').slick({
     {
       breakpoint: 995,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '80px',
         slidesToShow: 1,
         variableWidth: true
       }
@@ -34,7 +32,7 @@ $('.slider-block').slick({
     {
       breakpoint: 560,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         slidesToShow: 1,
         variableWidth: true

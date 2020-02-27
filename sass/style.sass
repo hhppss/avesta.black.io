@@ -32,16 +32,8 @@ a
 	display: none
 .link-shop 
 	display: inline-block
-.prev, .next 
-	position: absolute
-	top: 45%
-	height: 30px
-	width: 30px
-	z-index: 10
-.prev 
-	left: -10%
-.next
-	right: -10%
+.slick-prev, .slick-next 
+	z-index: 1
 .wave 
 	width: 100%
 	height: 100%
@@ -185,7 +177,7 @@ p
 .slider
 	background-color: $color-black
 	max-height: 800px
-	padding: 60px 0px 80px 0px
+	padding: 60px 0px 30px 0px
 	h2 
 		color: $color-white
 		margin-bottom: 40px
@@ -209,7 +201,10 @@ p
 		text-align: center
 		transition-duration: 0.7s
 		img 
+			width: 100%
+			height: 100%
 			max-width: 700px
+			max-height: 464px
 			height: auto
 			border-radius: 10px
 .rent 
@@ -364,6 +359,14 @@ p
 		overflow: hidden
 	.wave-header
 		margin-top: -10px
+	.slick-next
+		left: 93%
+	.slick-prev 
+		left: 3%
+	.slick-prev, .slick-next 
+		color: red
+	.slick-prev::before, .slick-next::before
+		color: black
 	p
 		font-size: 1.5rem
 	.header
