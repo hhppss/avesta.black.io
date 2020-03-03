@@ -1,8 +1,8 @@
 @import "_fonts.sass"
 $color-item:      				#D22237
 $color-white:     				#ffffff
-$color-black:							#262626
-$color-background: 				#CF3B47
+$color-black:							#434343
+$color-background: 				#CD4350
 =MontM()
 	font-family: "Montserrat Medium" 
 =MontB()
@@ -15,6 +15,7 @@ $color-background: 				#CF3B47
 h2 
 	+MontB 
 	font-size: 2.3rem
+	padding-top: 40px
 h3 
 	+MontB
 	font-size: 2.1rem
@@ -26,7 +27,7 @@ a
 	text-decoration: underline
 	transition-duration: 0.2s
 	&:hover
-		color: $color-item
+		color: $color-white
 		transition-duration: 0.2s
 .closeup
 	display: none
@@ -39,10 +40,11 @@ a
 	height: 100%
 	margin-top: 50px
 	margin-bottom: -5px
-	fill: #262626
+	fill: #434343
 .wave-header
-	margin-top: -40px
-
+	margin-top: -25px
+.slick-slide img 
+	display: inline
 // section 
 // 	padding-top: 70px
 p 
@@ -66,16 +68,19 @@ p
 		box-shadow: 0px 1px 15px $color-black
 		z-index: 3
 .header
-	height: 700px
-	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta8.jpg), #0e0e0e 50% 15%
+	height: 800px
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta1.jpg), #0e0e0e
+	background-position: 30% 15%
 	background-repeat: no-repeat
 	background-size: cover
+	h2 
+		padding: 0
 	&-title
 		color: $color-white
 		+MontB
 		text-align: left
 		h1 
-			padding-top: 180px
+			padding-top: 300px
 			font-size: 12rem
 			+MontB
 		span 
@@ -98,6 +103,9 @@ p
 				display: block
 				min-width: 100%
 				color: $color-white
+				&:hover
+					color: $color-background
+					transition-duration: 0.3s
 		&__phone
 			margin-right: 120px
 			a, span
@@ -117,6 +125,9 @@ p
 			text-decoration: none
 			color: $color-white
 			font-size: 1.3rem
+			&:hover
+					color: $color-background
+					transition-duration: 0.3s
 .briefly 
 	background-color: $color-background
 	color: $color-white
@@ -201,11 +212,8 @@ p
 		text-align: center
 		transition-duration: 0.7s
 		img 
-			width: 100%
-			height: 100%
-			max-width: 700px
+			max-width: 100%
 			max-height: 464px
-			height: auto
 			border-radius: 10px
 .rent 
 	background-color: $color-background
@@ -214,6 +222,7 @@ p
 	h2 
 		margin: 70px 0 40px 0
 		color: $color-white
+		padding: 0
 .feedback
 	background-color: $color-background
 	padding-top: 50px
@@ -221,8 +230,8 @@ p
 		text-decoration: none
 	&-form 
 		width: 100%
-		max-width: 500px
-		margin: 20px auto 0px auto
+		max-width: 550px
+		margin: 20px auto 20px auto
 		padding: 40px 50px 
 		background-color: $color-white
 		border-radius: 10px
@@ -230,6 +239,7 @@ p
 		h2 
 			margin-bottom: 20px
 			text-align: center
+			padding: 0
 		form
 			display: flex
 			justify-content: space-around
@@ -316,6 +326,9 @@ p
 		a 
 			color: $color-white
 			font-size: 1.6rem
+			&:hover
+					color: $color-background
+					transition-duration: 0.3s
 	&-link
 		&__png
 			margin-bottom: 15px
@@ -328,6 +341,15 @@ p
 			color: $color-white
 			font-size: 1.2rem
 
+@media only screen and (min-width: 1450px)
+	.wave
+		display: none
+	.header 
+		height: 700px
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta1.jpg), #0e0e0e
+		background-position: 0% 46%
+		background-repeat: no-repeat
+		background-size: cover
 @media only screen and (max-width: 1200px)
 	.slider-item
 		img 
@@ -349,6 +371,10 @@ p
 		font-size: 1.9rem
 	.header 
 		height: 700px
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta1.jpg), #0e0e0e
+		background-position: 100% 0%
+		background-repeat: no-repeat
+		background-size: cover
 		&-nav
 			&__item		
 	.slider-item 
@@ -439,7 +465,7 @@ p
 				img 
 					margin-top: 20px
 					width: 55px
-					height: 60px
+					height: 50px
 			&__link
 				max-height: 100px
 				margin: 0px auto 0 auto
@@ -483,7 +509,8 @@ p
 		&-item 
 			&__img 
 				img 
-					width: 50px
+					width: 55px
 					height: 50px
 					margin-left: 20px
-			
+	.slick-prev 
+		left: 1%

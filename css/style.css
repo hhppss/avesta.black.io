@@ -21,7 +21,8 @@
 
 h2 {
   font-family: "Montserrat Bold";
-  font-size: 2.3rem; }
+  font-size: 2.3rem;
+  padding-top: 40px; }
 
 h3 {
   font-family: "Montserrat Bold";
@@ -36,7 +37,7 @@ a {
   text-decoration: underline;
   transition-duration: 0.2s; }
   a:hover {
-    color: #D22237;
+    color: #ffffff;
     transition-duration: 0.2s; }
 
 .closeup {
@@ -53,10 +54,13 @@ a {
   height: 100%;
   margin-top: 50px;
   margin-bottom: -5px;
-  fill: #262626; }
+  fill: #434343; }
 
 .wave-header {
-  margin-top: -40px; }
+  margin-top: -25px; }
+
+.slick-slide img {
+  display: inline; }
 
 p {
   font-family: "Montserrat Medium";
@@ -76,21 +80,24 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #262626;
-    box-shadow: 0px 1px 15px #262626;
+    background-color: #434343;
+    box-shadow: 0px 1px 15px #434343;
     z-index: 3; }
 
 .header {
-  height: 700px;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta8.jpg), #0e0e0e 50% 15%;
+  height: 800px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta1.jpg), #0e0e0e;
+  background-position: 30% 15%;
   background-repeat: no-repeat;
   background-size: cover; }
+  .header h2 {
+    padding: 0; }
   .header-title {
     color: #ffffff;
     font-family: "Montserrat Bold";
     text-align: left; }
     .header-title h1 {
-      padding-top: 180px;
+      padding-top: 300px;
       font-size: 12rem;
       font-family: "Montserrat Bold"; }
     .header-title span {
@@ -113,6 +120,9 @@ p {
         display: block;
         min-width: 100%;
         color: #ffffff; }
+        .header-body__logo a:hover, .header-body__phone a:hover {
+          color: #CD4350;
+          transition-duration: 0.3s; }
     .header-body__phone {
       margin-right: 120px; }
       .header-body__phone a, .header-body__phone span {
@@ -132,9 +142,12 @@ p {
       text-decoration: none;
       color: #ffffff;
       font-size: 1.3rem; }
+      .header-list a:hover {
+        color: #CD4350;
+        transition-duration: 0.3s; }
 
 .briefly {
-  background-color: #CF3B47;
+  background-color: #CD4350;
   color: #ffffff;
   margin-bottom: -2px; }
   .briefly h2 {
@@ -142,7 +155,7 @@ p {
 
 .shop {
   position: relative;
-  background-color: #CF3B47;
+  background-color: #CD4350;
   padding-bottom: 30px; }
   .shop h2 {
     margin: 50px 0 30px 0;
@@ -176,7 +189,7 @@ p {
         display: inline;
         font-size: 1.8rem;
         text-align: right;
-        color: #262626; }
+        color: #434343; }
       .shop-item__text h4 {
         text-align: right; }
     .shop-item__link {
@@ -193,7 +206,7 @@ p {
       color: #ffffff; }
 
 .slider {
-  background-color: #262626;
+  background-color: #434343;
   max-height: 800px;
   padding: 60px 0px 30px 0px; }
   .slider h2 {
@@ -219,37 +232,36 @@ p {
     text-align: center;
     transition-duration: 0.7s; }
     .slider-item img {
-      width: 100%;
-      height: 100%;
-      max-width: 700px;
+      max-width: 100%;
       max-height: 464px;
-      height: auto;
       border-radius: 10px; }
 
 .rent {
-  background-color: #CF3B47;
+  background-color: #CD4350;
   color: #ffffff;
   margin-bottom: -2px; }
   .rent h2 {
     margin: 70px 0 40px 0;
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 0; }
 
 .feedback {
-  background-color: #CF3B47;
+  background-color: #CD4350;
   padding-top: 50px; }
   .feedback a {
     text-decoration: none; }
   .feedback-form {
     width: 100%;
-    max-width: 500px;
-    margin: 20px auto 0px auto;
+    max-width: 550px;
+    margin: 20px auto 20px auto;
     padding: 40px 50px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25); }
     .feedback-form h2 {
       margin-bottom: 20px;
-      text-align: center; }
+      text-align: center;
+      padding: 0; }
     .feedback-form form {
       display: flex;
       justify-content: space-around;
@@ -264,7 +276,7 @@ p {
       max-width: 500px;
       padding: 10px;
       font-size: 1.6rem;
-      border: 2px solid #262626; }
+      border: 2px solid #434343; }
     .feedback-form button {
       width: 100%;
       max-width: 220px;
@@ -280,7 +292,7 @@ p {
         -webkit-transition: 0.5s;
         transition: 0.5s; }
     .feedback-form__whatsapp:hover {
-      color: #262626; }
+      color: #434343; }
     .feedback-form__whatsapp, .feedback-form__call {
       display: block;
       width: 100%;
@@ -294,7 +306,7 @@ p {
       border-radius: 5px;
       background-color: #25d366; }
     .feedback-form__call {
-      background-color: #262626; }
+      background-color: #434343; }
   .feedback-or {
     text-align: center;
     width: 80%;
@@ -316,7 +328,7 @@ p {
         left: 50px; }
 
 .about {
-  background: #262626;
+  background: #434343;
   padding-bottom: 40px; }
   .about h2 {
     margin-top: 50px;
@@ -337,6 +349,9 @@ p {
     .about-text a {
       color: #ffffff;
       font-size: 1.6rem; }
+      .about-text a:hover {
+        color: #CD4350;
+        transition-duration: 0.3s; }
   .about-link__png {
     margin-bottom: 15px; }
     .about-link__png img {
@@ -347,6 +362,16 @@ p {
     .about .copyright a, .about .copyright span {
       color: #ffffff;
       font-size: 1.2rem; }
+
+@media only screen and (min-width: 1450px) {
+  .wave {
+    display: none; }
+  .header {
+    height: 700px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta1.jpg), #0e0e0e;
+    background-position: 0% 46%;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 @media only screen and (max-width: 1200px) {
   .slider-item img {
@@ -369,7 +394,11 @@ p {
   h2 {
     font-size: 1.9rem; }
   .header {
-    height: 700px; }
+    height: 700px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta1.jpg), #0e0e0e;
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .slider-item img {
     max-width: 400px; } }
 
@@ -425,7 +454,7 @@ p {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #262626;
+    background-color: #434343;
     padding: 80px 0 0 0;
     transition: all 0.3s ease-in-out 0.1s; }
   .header-list {
@@ -454,7 +483,7 @@ p {
   .shop-item__img img {
     margin-top: 20px;
     width: 55px;
-    height: 60px; }
+    height: 50px; }
   .shop-item__link {
     max-height: 100px;
     margin: 0px auto 0 auto; }
@@ -493,6 +522,8 @@ p {
   .header-title span {
     font-size: 2.2rem; }
   .shop-item__img img {
-    width: 50px;
+    width: 55px;
     height: 50px;
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  .slick-prev {
+    left: 1%; } }
