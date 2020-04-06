@@ -16,7 +16,7 @@
 
 * {
   font-family: "Montserrat Medium";
-  font-size: 10px;
+  font-size: 9px;
   outline: none; }
 
 h2 {
@@ -185,6 +185,9 @@ p {
         display: inline;
         margin-top: 7rem;
         text-align: left; }
+        .shop-item__text h3 span {
+          width: 8%;
+          font-size: 1.6rem; }
       .shop-item__text a {
         display: inline;
         font-size: 1.8rem;
@@ -486,7 +489,8 @@ p {
     height: 50px; }
   .shop-item__link {
     max-height: 100px;
-    margin: 0px auto 0 auto; }
+    margin-left: auto;
+    margin-right: 10px; }
     .shop-item__link h3 {
       text-align: right;
       font-size: 1.6rem;
