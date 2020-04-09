@@ -86,7 +86,7 @@ p {
 
 .header {
   height: 800px;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta1.jpg), #0e0e0e;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/header-bg.jpeg), #0e0e0e;
   background-position: 30% 15%;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -371,7 +371,7 @@ p {
     display: none; }
   .header {
     height: 700px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta1.jpg), #0e0e0e;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/header-bg.jpeg), #0e0e0e;
     background-position: 0% 46%;
     background-repeat: no-repeat;
     background-size: cover; } }
@@ -398,7 +398,7 @@ p {
     font-size: 1.9rem; }
   .header {
     height: 700px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/avesta1.jpg), #0e0e0e;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/header-bg.jpeg), #0e0e0e;
     background-position: 100% 0%;
     background-repeat: no-repeat;
     background-size: cover; }
